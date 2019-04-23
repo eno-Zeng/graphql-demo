@@ -3,7 +3,8 @@ import {
   GraphQLObjectType,
   GraphQLString,
   GraphQLInt,
-  GraphQLID
+  GraphQLID,
+  GraphQLNonNull,
 } from 'graphql'
 
 const ObjectType = new GraphQLObjectType({
@@ -12,8 +13,9 @@ const ObjectType = new GraphQLObjectType({
     id: {
       type: GraphQLID
     },
+    // 必要字段(字段值不能为空值nll/undefined)
     name: {
-      type: GraphQLString
+      type: GraphQLNonNull(GraphQLString)
     },
     age: {
       type: GraphQLInt

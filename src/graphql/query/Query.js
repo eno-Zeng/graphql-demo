@@ -4,6 +4,7 @@ import {
   GraphQLInt,
   GraphQLBoolean,
   GraphQLID,
+  GraphQLNonNull,
 } from 'graphql'
 
 import ObjectType from './fields/ObjectType'
