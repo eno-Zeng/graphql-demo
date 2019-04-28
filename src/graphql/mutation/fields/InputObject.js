@@ -9,11 +9,11 @@ const InputObject = new GraphQLInputObjectType({
   fields: {
     username: {
       type: GraphQLString,
-      defaultValue: 'eno',
+      defaultValue: '',
     },
     password: {
       type: GraphQLString,
-      defaultValue: '123456'
+      defaultValue: ''
     }
   }
 });
